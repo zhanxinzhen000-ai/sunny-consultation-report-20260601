@@ -1,0 +1,1744 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sunny程冬旭-咨询报告-2026-06-01（调整版）</title>
+  <style>
+    :root {
+      --bg: #f6f2ea;
+      --paper: #fffdf8;
+      --paper-2: #f9fbf7;
+      --ink: #25231f;
+      --muted: #706c62;
+      --line: #ded7cb;
+      --sage: #587a62;
+      --sage-soft: #e8f0e7;
+      --clay: #ad694f;
+      --clay-soft: #f5e6df;
+      --blue: #516f8d;
+      --blue-soft: #e7edf3;
+      --plum: #7b6378;
+      --plum-soft: #efe8ef;
+      --gold: #d39c45;
+      --gold-soft: #f6eddc;
+      --shadow: 0 16px 42px rgba(54, 43, 31, .10);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, rgba(246,242,234,.96), rgba(249,251,247,.98) 46%, rgba(255,253,248,1)),
+        repeating-linear-gradient(90deg, rgba(88,122,98,.05) 0 1px, transparent 1px 68px);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.72;
+      letter-spacing: 0;
+    }
+
+    h1, h2, h3, p { margin: 0; }
+
+    strong {
+      color: var(--ink);
+      font-weight: 900;
+    }
+
+    mark.hl {
+      padding: 0 .18em .04em;
+      border-radius: 4px;
+      background: linear-gradient(180deg, transparent 52%, rgba(211,156,69,.34) 52%);
+      color: inherit;
+      font-weight: 850;
+    }
+
+    .underline {
+      text-decoration-line: underline;
+      text-decoration-thickness: .18em;
+      text-decoration-color: rgba(88,122,98,.28);
+      text-underline-offset: .16em;
+      font-weight: 850;
+    }
+
+    .spark {
+      color: var(--sage);
+      font-weight: 900;
+    }
+
+    .page {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      padding: 22px 16px 60px;
+    }
+
+    .hero {
+      min-height: 86vh;
+      display: grid;
+      grid-template-columns: minmax(0, 1.12fr) minmax(300px, .88fr);
+      gap: 28px;
+      align-items: center;
+      padding: 42px 0 28px;
+    }
+
+    .hero-copy {
+      display: grid;
+      gap: 20px;
+      align-content: center;
+    }
+
+    .eyebrow {
+      color: var(--sage);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 780px;
+      font-size: clamp(38px, 7vw, 76px);
+      line-height: 1.03;
+      letter-spacing: 0;
+      font-weight: 850;
+    }
+
+    h2 {
+      font-size: clamp(25px, 4vw, 38px);
+      line-height: 1.18;
+      letter-spacing: 0;
+      margin-bottom: 14px;
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 1.32;
+      letter-spacing: 0;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: clamp(17px, 2.25vw, 22px);
+      line-height: 1.62;
+    }
+
+    .meta, .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,253,248,.78);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .chip {
+      min-height: 36px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .chip.sage { background: var(--sage-soft); color: var(--sage); }
+    .chip.clay { background: var(--clay-soft); color: var(--clay); }
+    .chip.blue { background: var(--blue-soft); color: var(--blue); }
+
+    .summary-panel {
+      background: rgba(255,253,248,.9);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      padding: 20px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .summary-title {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .summary-line {
+      font-size: 22px;
+      line-height: 1.4;
+      font-weight: 800;
+    }
+
+    .summary-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .summary-list li {
+      display: grid;
+      grid-template-columns: 22px 1fr;
+      gap: 9px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .summary-list .summary-index {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--sage);
+      color: white;
+      font-size: 12px;
+      font-weight: 800;
+      margin-top: 2px;
+    }
+
+    .summary-list .summary-copy {
+      display: block;
+      min-width: 0;
+      color: var(--muted);
+    }
+
+    .top-conclusions {
+      padding: 0 0 42px;
+      border-top: 0;
+    }
+
+    .conclusion-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      counter-reset: conclusion;
+    }
+
+    .conclusion-card {
+      position: relative;
+      min-height: 150px;
+      padding: 48px 18px 18px;
+      background: rgba(255,253,248,.9);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .conclusion-card::before {
+      counter-increment: conclusion;
+      content: "0" counter(conclusion);
+      position: absolute;
+      top: 16px;
+      left: 18px;
+      color: var(--sage);
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .focus-line {
+      margin: 0 0 18px;
+      padding: 16px 18px;
+      border-left: 5px solid var(--sage);
+      border-radius: 0 8px 8px 0;
+      background: rgba(232,240,231,.72);
+      color: var(--ink);
+      font-size: clamp(18px, 2.5vw, 24px);
+      line-height: 1.42;
+      font-weight: 850;
+    }
+
+    .layer-label {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      margin: 0 0 10px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: var(--gold-soft);
+      color: #8d6420;
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .analysis-block {
+      margin-top: 16px;
+      padding: 18px;
+      border: 1px dashed rgba(112,108,98,.34);
+      border-radius: 8px;
+      background: rgba(255,253,248,.58);
+    }
+
+    .analysis-block p {
+      color: var(--muted);
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      cursor: pointer;
+    }
+
+    button.primary {
+      border-color: transparent;
+      background: var(--ink);
+      color: var(--paper);
+    }
+
+    section {
+      padding: 46px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, .72fr) minmax(280px, .28fr);
+      gap: 20px;
+      align-items: start;
+      margin-bottom: 20px;
+    }
+
+    .section-lead {
+      max-width: 820px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .takeaway {
+      border: 1px solid rgba(88,122,98,.28);
+      border-radius: 8px;
+      background: rgba(232,240,231,.66);
+      padding: 14px;
+      color: var(--sage);
+      font-size: 15px;
+      line-height: 1.56;
+      font-weight: 700;
+    }
+
+    .takeaway b {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--ink);
+      font-size: 13px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    .card {
+      background: rgba(255,253,248,.88);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .card p, li { color: var(--muted); }
+
+    .accent-sage { border-top: 4px solid var(--sage); }
+    .accent-clay { border-top: 4px solid var(--clay); }
+    .accent-blue { border-top: 4px solid var(--blue); }
+    .accent-plum { border-top: 4px solid var(--plum); }
+    .accent-gold { border-top: 4px solid var(--gold); }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+      align-items: stretch;
+    }
+
+    .flow-node {
+      position: relative;
+      min-height: 190px;
+      padding: 18px 14px 16px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .node-number {
+      display: inline-grid;
+      place-items: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-bottom: 12px;
+      background: var(--ink);
+      color: var(--paper);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .flow-node::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      width: 10px;
+      height: 2px;
+      background: var(--line);
+    }
+
+    .flow-node:last-child::after { display: none; }
+
+    .node-kicker {
+      display: inline-flex;
+      align-items: center;
+      height: 26px;
+      padding: 0 9px;
+      border-radius: 999px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .flow-node:nth-child(2) .node-kicker { background: var(--plum-soft); color: var(--plum); }
+    .flow-node:nth-child(3) .node-kicker { background: var(--clay-soft); color: var(--clay); }
+    .flow-node:nth-child(4) .node-kicker { background: var(--gold-soft); color: #8d6420; }
+    .flow-node:nth-child(5) .node-kicker { background: var(--sage-soft); color: var(--sage); }
+
+    .comparison {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    .practice-table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255,253,248,.9);
+      box-shadow: var(--shadow);
+    }
+
+    .practice-table th,
+    .practice-table td {
+      padding: 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .practice-table th {
+      background: rgba(232,240,231,.78);
+      color: var(--ink);
+      font-size: 14px;
+    }
+
+    .practice-table td {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .practice-table tr:last-child td { border-bottom: 0; }
+
+    .compare-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .compare-card.recommended {
+      border-color: rgba(88,122,98,.42);
+      background: linear-gradient(180deg, rgba(232,240,231,.76), rgba(255,253,248,.9));
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: var(--sage);
+      color: white;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .quote {
+      border-left: 4px solid var(--gold);
+      padding: 16px 18px;
+      background: rgba(246,237,220,.74);
+      color: var(--ink);
+      border-radius: 0 8px 8px 0;
+      font-size: 18px;
+      line-height: 1.68;
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      counter-reset: step;
+    }
+
+    .stage-map {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin: 0 0 16px;
+    }
+
+    .stage-card {
+      position: relative;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .stage-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--ink);
+      font-size: 16px;
+    }
+
+    .stage-card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .stage-tag {
+      display: inline-flex;
+      min-height: 26px;
+      align-items: center;
+      padding: 3px 9px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .step {
+      position: relative;
+      padding-top: 50px;
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      top: 16px;
+      left: 18px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--ink);
+      color: white;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .decision {
+      background: linear-gradient(135deg, rgba(88,122,98,.16), rgba(81,111,141,.12) 55%, rgba(211,156,69,.18));
+      border: 1px solid rgba(88,122,98,.28);
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .pattern-block {
+      display: grid;
+      grid-template-columns: minmax(0, .92fr) minmax(260px, .36fr);
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    .pattern-name {
+      padding: 24px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, rgba(232,240,231,.86), rgba(255,253,248,.92));
+      border: 1px solid rgba(88,122,98,.34);
+      box-shadow: var(--shadow);
+    }
+
+    .pattern-name p:first-child {
+      color: var(--muted);
+      font-weight: 850;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .pattern-name strong {
+      display: block;
+      color: var(--ink);
+      font-size: clamp(26px, 5vw, 46px);
+      line-height: 1.08;
+      letter-spacing: 0;
+      margin-bottom: 12px;
+    }
+
+    .evidence-grid, .future-grid, .quote-signal-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .evidence-card, .future-card, .quote-signal-card {
+      background: rgba(255,253,248,.9);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .evidence-card strong,
+    .future-card strong,
+    .quote-signal-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--ink);
+      font-size: 16px;
+    }
+
+    .evidence-card p,
+    .future-card p,
+    .quote-signal-card p {
+      color: var(--muted);
+    }
+
+    .quote-signal-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .quote-signal-card {
+      position: relative;
+    }
+
+    .quote-fragment {
+      margin-bottom: 12px;
+      padding: 12px 14px;
+      border-radius: 8px;
+      background: var(--gold-soft);
+      color: var(--ink);
+      font-weight: 850;
+      line-height: 1.5;
+    }
+
+    .core-map {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+      align-items: stretch;
+    }
+
+    .map-node {
+      position: relative;
+      min-height: 178px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255,253,248,.92);
+      box-shadow: var(--shadow);
+    }
+
+    .map-node::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      width: 10px;
+      height: 2px;
+      background: var(--line);
+    }
+
+    .map-node:last-child::after { display: none; }
+
+    .map-node strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--ink);
+      font-size: 16px;
+    }
+
+    .map-node p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .evidence-bridge {
+      display: grid;
+      gap: 12px;
+    }
+
+    .bridge-row {
+      display: grid;
+      grid-template-columns: minmax(0, .86fr) minmax(0, 1fr) minmax(0, 1.06fr);
+      gap: 10px;
+      align-items: stretch;
+    }
+
+    .bridge-cell {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255,253,248,.9);
+      box-shadow: var(--shadow);
+    }
+
+    .bridge-label {
+      display: inline-flex;
+      margin-bottom: 8px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: var(--sage-soft);
+      color: var(--sage);
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .bridge-cell p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .support-track {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .support-step {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255,253,248,.9);
+      box-shadow: var(--shadow);
+    }
+
+    .support-step.emphasis {
+      border-color: rgba(81,111,141,.38);
+      background: linear-gradient(180deg, rgba(231,237,243,.78), rgba(255,253,248,.92));
+    }
+
+    .support-step strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--ink);
+      font-size: 17px;
+    }
+
+    .support-step p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .letter {
+      padding: 28px;
+      border-radius: 8px;
+      background:
+        linear-gradient(180deg, rgba(255,253,248,.94), rgba(246,237,220,.56)),
+        linear-gradient(90deg, rgba(88,122,98,.12), transparent);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .letter p {
+      color: var(--ink);
+      font-size: 18px;
+      line-height: 1.82;
+      white-space: pre-line;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 1.2em;
+    }
+
+    .footer {
+      padding-top: 24px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity .5s ease, transform .5s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 920px) {
+      .hero, .section-head, .pattern-block { grid-template-columns: 1fr; }
+      .hero { min-height: auto; padding-top: 34px; }
+      .flow, .core-map { grid-template-columns: 1fr; }
+      .flow-node, .map-node { min-height: auto; }
+      .flow-node::after, .map-node::after {
+        top: auto;
+        right: auto;
+        left: 24px;
+        bottom: -10px;
+        width: 2px;
+        height: 10px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .page { padding: 18px 14px 42px; }
+      .grid, .grid.two, .timeline, .comparison, .conclusion-strip, .stage-map, .evidence-grid, .future-grid, .quote-signal-grid, .bridge-row, .support-track { grid-template-columns: 1fr; }
+      section { padding: 36px 0; }
+      .card, .summary-panel { padding: 16px; }
+      h1 { font-size: clamp(36px, 13vw, 54px); }
+      .practice-table, .practice-table tbody, .practice-table tr, .practice-table th, .practice-table td {
+        display: block;
+        width: 100%;
+      }
+      .practice-table thead { display: none; }
+      .practice-table td { border-bottom: 0; padding: 10px 14px; }
+      .practice-table tr { border-bottom: 1px solid var(--line); padding: 8px 0; }
+      .practice-table tr:last-child { border-bottom: 0; }
+      .practice-table td::before {
+        content: attr(data-label);
+        display: block;
+        color: var(--ink);
+        font-size: 12px;
+        font-weight: 850;
+        margin-bottom: 4px;
+      }
+    }
+
+    @media print {
+      body { background: white; }
+      .page { width: 100%; padding: 0; }
+      .actions { display: none; }
+      .hero { min-height: auto; padding: 24px 0; grid-template-columns: 1fr; }
+      section { break-inside: avoid; padding: 24px 0; }
+      .card, .summary-panel, .flow-node { box-shadow: none; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+
+  <style>
+    .path-table {
+      table-layout: fixed;
+      margin-bottom: 22px;
+    }
+
+    .path-table th,
+    .path-table td {
+      overflow-wrap: anywhere;
+      word-break: normal;
+    }
+
+    .price-panel {
+      display: grid;
+      grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+      gap: 14px;
+      margin: 0 0 18px;
+    }
+
+    .price-card {
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      padding: 18px;
+      background: rgba(255,253,248,.92);
+      box-shadow: var(--shadow);
+    }
+
+    .price-card span {
+      display: inline-flex;
+      min-height: 28px;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .price-card strong {
+      display: block;
+      font-size: clamp(30px, 6vw, 48px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .price-card p {
+      margin-top: 10px;
+      color: var(--sage);
+      font-size: 15px;
+      font-weight: 850;
+    }
+
+    .price-card.healing {
+      border-color: rgba(88,122,98,.42);
+      background: linear-gradient(180deg, rgba(232,240,231,.88), rgba(255,253,248,.96));
+    }
+
+    .price-card.healing span {
+      background: var(--sage);
+      color: white;
+    }
+
+    @media (max-width: 980px) {
+      .path-table,
+      .path-table tbody,
+      .path-table tr,
+      .path-table th,
+      .path-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .path-table {
+        border-collapse: separate;
+        border-spacing: 0;
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+      }
+
+      .path-table thead {
+        display: none;
+      }
+
+      .path-table tbody {
+        display: grid;
+        gap: 12px;
+      }
+
+      .path-table tr {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255,253,248,.92);
+        box-shadow: var(--shadow);
+        padding: 12px 14px;
+      }
+
+      .path-table td {
+        border: 0;
+        padding: 8px 0;
+        font-size: 15px;
+      }
+
+      .path-table td::before {
+        content: attr(data-label);
+        display: block;
+        color: var(--ink);
+        font-size: 12px;
+        font-weight: 900;
+        margin-bottom: 3px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .price-panel {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">心正 · 咨询报告 v1.6</div>
+        <h1>Sunny程冬旭的咨询报告</h1>
+        <p class="subtitle">你这次卡住的不是直播技巧，而是一个更深的生命姿势：<mark class="hl">一边渴望被看见，一边先把自己藏到安全线后面</mark>。</p>
+        <div class="meta">
+          <span class="pill">日期：2026-06-01</span>
+          <span class="pill">主题：被看见、不要输与找回真实自己</span>
+          <span class="pill">建议路径：最新版《真心之路》年度支持</span>
+        </div>
+        <div class="chips">
+          <span class="chip sage">高觉察</span>
+          <span class="chip clay">怕被看见</span>
+          <span class="chip blue">本质具足</span>
+        </div>
+        <div class="actions">
+          <button class="primary" onclick="document.querySelector('#decision').scrollIntoView({behavior:'smooth'})">看下一步</button>
+          <button onclick="window.print()">打印 / 导出 PDF</button>
+        </div>
+      </div>
+      <aside class="summary-panel">
+        <p class="summary-title">核心速览</p>
+        <p class="summary-line">你不是不想赢，而是太习惯先保护自己不要输；真正的方向，不是逼自己更勇敢，而是把被防守收起的生命力带回来。</p>
+        <ul class="summary-list">
+          <li><span class="summary-index">1</span><span class="summary-copy">直播只是入口，真正反复出现的是<mark class="hl">自我价值与被评价的旧模式</mark>。</span></li>
+          <li><span class="summary-index">2</span><span class="summary-copy">你已经能看见很多，但旧反应仍在身体和关系里自动启动。</span></li>
+          <li><span class="summary-index">3</span><span class="summary-copy">更适合进入一段系统陪伴，把知道变成真实场景里的新反应，也把本来完整的自己慢慢带回来。</span></li>
+        </ul>
+      </aside>
+    </header>
+
+    <section class="top-conclusions reveal">
+      <div class="section-head">
+        <div>
+          <h2>本报告最重要的 3 个结论</h2>
+          <p class="section-lead">如果你只先看这一屏，也能抓住这次咨询最关键的方向。</p>
+        </div>
+        <aside class="takeaway"><b>阅读方式</b>先看重点句，再看图表，最后读完整分析。</aside>
+      </div>
+      <div class="conclusion-strip">
+        <article class="conclusion-card accent-sage">
+          <h3>问题不在能力</h3>
+          <p>你不是不会表达，也不是没有专业能力，而是一旦被看见，身体会先进入紧张和防御。</p>
+        </article>
+        <article class="conclusion-card accent-clay">
+          <h3>旧模式很深</h3>
+          <p>这个模式不只在直播里，也出现在亲子、亲密关系、工作表现和面对夸奖的时候。</p>
+        </article>
+        <article class="conclusion-card accent-blue">
+          <h3>需要场景练习</h3>
+          <p>这不是再听一次道理就能改变的议题，而是需要在直播、亲子、关系这些真实场景里反复看见、松动、练习、稳住。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-head">
+        <div>
+          <h2>核心模式地图</h2>
+          <p class="section-lead">先用一张图把这份报告的因果线看清楚：你不是很多地方都有问题，而是同一个模式在不同场景重复。</p>
+        </div>
+        <aside class="takeaway"><b>本节重点</b>同一个模式正在不同场景重复：被看见会启动自我攻击，安全会压过生命力。</aside>
+      </div>
+      <div class="core-map">
+        <article class="map-node accent-blue">
+          <span class="stage-tag">触发点</span>
+          <strong>什么会启动你</strong>
+          <p>直播、被点名、被夸奖、孩子不按你的期待来、关系靠近时。</p>
+        </article>
+        <article class="map-node accent-plum">
+          <span class="stage-tag">内在信念</span>
+          <strong>心里先相信什么</strong>
+          <p>如果我表现不好，就会被证明我不够好；如果我太亮，也可能变得危险。</p>
+        </article>
+        <article class="map-node accent-clay">
+          <span class="stage-tag">旧反应</span>
+          <strong>你会自动怎么做</strong>
+          <p>先准备、先控制、先退到安全位置，尽量维持一个好形象。</p>
+        </article>
+        <article class="map-node accent-gold">
+          <span class="stage-tag">代价</span>
+          <strong>最后消耗什么</strong>
+          <p>行动被拖住，生命力被收起，亲子和关系里也容易紧绷。</p>
+        </article>
+        <article class="map-node accent-sage">
+          <span class="stage-tag">新方向</span>
+          <strong>真正要练什么</strong>
+          <p>练习在被看见时仍然接住自己，从不要输慢慢转向允许自己真实出现。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-head">
+        <div>
+          <h2>你的专属模式命名</h2>
+          <p class="section-lead">一个人真正开始改变，常常不是从懂更多开始，而是终于看清：原来我一直在重复的是这个模式。</p>
+        </div>
+        <aside class="takeaway"><b>本节重点</b>先看清这个模式，它才不会继续躲在直播、孩子、关系和自我要求后面。</aside>
+      </div>
+      <div class="pattern-block">
+        <article class="pattern-name">
+          <p>你的核心模式</p>
+          <strong>先不要输，再把真实的自己带出来</strong>
+          <p>你的核心模式不是简单的胆怯，而是长期把安全放在生命力前面：先保证不出错、不丢脸、不被证明不好，再考虑要不要真正站出来。</p>
+        </article>
+        <article class="card accent-sage">
+          <h3>为什么要先命名</h3>
+          <p>命名不是为了给你贴标签，而是让你以后在真实场景里能更快认出它：原来此刻又是那个<mark class="hl">渴望被看见，却先退回防守</mark>的自己出现了。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-head">
+        <div>
+          <h2>这份判断来自哪里</h2>
+          <p class="section-lead">这不是套模板的判断，而是从你这次咨询里反复出现的信号里整理出来的。</p>
+        </div>
+        <aside class="takeaway"><b>本节重点</b>这些判断来自你在咨询中反复出现的表达、身体反应和关系模式。</aside>
+      </div>
+      <div class="evidence-grid">
+        <article class="evidence-card accent-blue">
+          <strong>直播准备很久却一直没有开始</strong>
+          <p>你从去年十月开始准备直播，到现在仍然没有真正开始。表面是行动卡住，深一点是被看见会触发恐惧。</p>
+        </article>
+        <article class="evidence-card accent-clay">
+          <strong>接不住夸奖，也接不住批评</strong>
+          <p>你提到别人夸你做得好时，内心并不能真正认同，甚至会尴尬、想逃开。</p>
+        </article>
+        <article class="evidence-card accent-sage">
+          <strong>在关系和角色里保持安全距离</strong>
+          <p>你能看见自己在人际、伴侣和亲子关系里都会小心翼翼，也习惯通过好妈妈、好妻子、好形象来维持安全感。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-head">
+        <div>
+          <h2>你咨询里出现的 3 个关键信号</h2>
+          <p class="section-lead">真正定制的报告，不只是给结论，也要让你看见：这些判断是从哪里来的。</p>
+        </div>
+        <aside class="takeaway"><b>本节重点</b>三个信号共同指向：这不是单一事件，而是一条长期运行的旧路。</aside>
+      </div>
+      <div class="quote-signal-grid">
+        <article class="quote-signal-card accent-blue">
+          <span class="stage-tag">原文信号</span>
+          <div class="quote-fragment">“我总觉得屏幕里有很多批评者。”</div>
+          <strong>被看见等于被审判</strong>
+          <p>直播不是单纯的表达挑战，而是触发了你内在对评价和否定的警报。</p>
+        </article>
+        <article class="quote-signal-card accent-clay">
+          <span class="stage-tag">原文信号</span>
+          <div class="quote-fragment">“我没有要赢，我只是想不要输。”</div>
+          <strong>安全压过了生命力</strong>
+          <p>你真正消耗的不是努力不够，而是大量能量都放在防守和自我保护上。</p>
+        </article>
+        <article class="quote-signal-card accent-sage">
+          <span class="stage-tag">原文信号</span>
+          <div class="quote-fragment">“我想要孩子来证明我是个好妈妈。”</div>
+          <strong>外在表现承载内在需要</strong>
+          <p>孩子、直播、关系都容易变成证明自己的地方，于是你很难轻松地只是做自己，也很难相信自己本来就够。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-head">
+        <div>
+          <h2>从原文信号到核心诊断</h2>
+          <p class="section-lead">这部分把“你说过什么”与“它说明什么”连起来，避免报告只给结论，却看不见判断路径。</p>
+        </div>
+        <aside class="takeaway"><b>本节重点</b>从原文到诊断，中间有一条清楚的因果线。</aside>
+      </div>
+      <div class="evidence-bridge">
+        <div class="bridge-row">
+          <div class="bridge-cell">
+            <span class="bridge-label">原文信号</span>
+            <p>准备直播很久，却一直想用小号、避开熟人、低调开始。</p>
+          </div>
+          <div class="bridge-cell">
+            <span class="bridge-label">它说明</span>
+            <p>你并不是不想表达，而是怕真实的自己一出现就被评价。</p>
+          </div>
+          <div class="bridge-cell">
+            <span class="bridge-label">归到诊断</span>
+            <p>被看见恐惧。</p>
+          </div>
+        </div>
+        <div class="bridge-row">
+          <div class="bridge-cell">
+            <span class="bridge-label">原文信号</span>
+            <p>面对夸奖时也接不住，觉得外面的认可像假的。</p>
+          </div>
+          <div class="bridge-cell">
+            <span class="bridge-label">它说明</span>
+            <p>外界肯定进不来，因为内在已经先给自己盖了否定章。</p>
+          </div>
+          <div class="bridge-cell">
+            <span class="bridge-label">归到诊断</span>
+            <p>自我价值无法被领受。</p>
+          </div>
+        </div>
+        <div class="bridge-row">
+          <div class="bridge-cell">
+            <span class="bridge-label">原文信号</span>
+            <p>想做六边形妈妈、好妻子、好角色，但内在越来越累。</p>
+          </div>
+          <div class="bridge-cell">
+            <span class="bridge-label">它说明</span>
+            <p>很多“应该”在替“我害怕”工作，真实的喜悦被角色盖住。</p>
+          </div>
+          <div class="bridge-cell">
+            <span class="bridge-label">归到诊断</span>
+            <p>角色补偿与控制。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-head">
+        <div>
+          <h2>这次咨询真正看见了什么</h2>
+          <p class="section-lead">我在这次咨询里看到，你真正卡住的不是某一个行动，而是一个长期的生命姿势：你很努力地做好每个角色，但内在一直有一部分不敢相信自己本来就值得、也本来完整。</p>
+        </div>
+        <aside class="takeaway"><b>本节重点</b>直播只是门口，门后面是自我价值、关系安全，以及那个真实的自己能不能重新出来。</aside>
+      </div>
+      <p class="layer-label">重点句</p>
+      <p class="focus-line">表面看起来是直播拖延，真正反复发生的是：<strong>一旦你要被看见，内在就会先启动自我攻击和自我保护</strong>。</p>
+      <p class="layer-label">逻辑拆解</p>
+      <div class="grid two">
+        <article class="card accent-sage">
+          <h3>本次主战场</h3>
+          <p>本次真正的主战场是被看见和自我价值。你想突破直播，但直播只是把旧模式照出来的入口。</p>
+        </article>
+        <article class="card accent-blue">
+          <h3>表面看起来</h3>
+          <p>表面困扰是直播迟迟开始不了、亲子关系里情绪会失控、面对夸奖和靠近会紧张。</p>
+        </article>
+      </div>
+      <div class="analysis-block">
+        <p class="layer-label">完整分析</p>
+        <p>我在这次咨询里看到，你真正卡住的不是某一个行动，而是一个长期的生命姿势：你很努力地做好每个角色，但内在一直有一部分不敢相信自己本来就值得、也本来完整。</p>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-head">
+        <div>
+          <h2>你的重复循环</h2>
+          <p class="section-lead">我听到的不是一件孤立的事，而是一种你已经很熟悉的循环。它真正需要被看见的，是从触发到结果之间那条自动发生的路。</p>
+        </div>
+        <aside class="takeaway"><b>本节重点</b>旧循环不是偶尔发生，而是从事业、关系到亲子都在重复。</aside>
+      </div>
+      <p class="layer-label">重点句</p>
+      <p class="focus-line">你的循环是：被看见或被要求表现 -> 担心自己不够好 -> 控制和退缩 -> 暂时安全 -> 更难真正给出自己。</p>
+      <p class="layer-label">编号逻辑链</p>
+      <div class="flow">
+        <article class="flow-node">
+          <span class="node-number">01</span>
+          <div class="node-kicker">触发情境</div>
+          <h3>什么时候启动</h3>
+          <p>要直播、要站出来、被突然点名、孩子不符合期待、关系靠得更近。</p>
+        </article>
+        <article class="flow-node">
+          <span class="node-number">02</span>
+          <div class="node-kicker">内在信念</div>
+          <h3>心里先相信什么</h3>
+          <p>我不能出错；如果我不好，就不值得被喜欢；如果我太突出，也会不安全。</p>
+        </article>
+        <article class="flow-node">
+          <span class="node-number">03</span>
+          <div class="node-kicker">惯性反应</div>
+          <h3>自动怎么做</h3>
+          <p>准备很久、维持好形象、把自己放在安全位置，或者用控制自己和控制孩子来避免失控。</p>
+        </article>
+        <article class="flow-node">
+          <span class="node-number">04</span>
+          <div class="node-kicker">短期保护</div>
+          <h3>它暂时保护了什么</h3>
+          <p>它让你暂时避免羞耻、评价和失控，也让你不用马上面对那个不被认可的小孩。</p>
+        </article>
+        <article class="flow-node">
+          <span class="node-number">05</span>
+          <div class="node-kicker">长期结果</div>
+          <h3>最后重复什么</h3>
+          <p>行动变慢，能量内耗，关系不够流动，真实的自己越来越难自然出现。</p>
+        </article>
+      </div>
+      <div class="analysis-block">
+        <p class="layer-label">完整分析</p>
+        <p>这个循环很聪明，它曾经保护过你。小时候做乖孩子、做好角色、拿到认可，可能是你获得安全和被看见的方式。但现在它开始限制你：你越想确保安全，越难真正表达；你越想维持好形象，越难接住真实的自己。</p>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-head">
+        <div>
+          <h2>这个模式已经带来的代价</h2>
+          <p class="section-lead">这不是让你难受一下而已，它已经开始影响你怎么选择、怎么行动、怎么面对自己。</p>
+        </div>
+        <aside class="takeaway"><b>本节重点</b>代价已经不只是一个直播没开始，而是生命力持续被收起来。</aside>
+      </div>
+      <p class="layer-label">重点句</p>
+      <p class="focus-line">真正的代价是：你明明有能力，却长期把大部分能量用在防守、控制和避免被证明不好。</p>
+      <p class="layer-label">三层代价</p>
+      <div class="grid">
+        <article class="card accent-blue">
+          <h3>过去尝试</h3>
+          <p>你已经做过多年心理咨询，也有很强的觉察能力，能理解很多模式。但知道并没有自动让身体停止紧张，也没有让旧反应彻底松开。</p>
+        </article>
+        <article class="card accent-clay">
+          <h3>当前代价</h3>
+          <p>直播迟迟没有开始；面对夸奖不自然；亲子关系里容易被触发；关系里保持距离；很多事做得很用力，却不一定能感到喜悦。</p>
+        </article>
+        <article class="card accent-gold">
+          <h3>未来提醒</h3>
+          <p>如果接下来三个月仍然只靠自己消化，可能会继续停留在“我知道自己怎么了，但关键时刻还是退回旧模式”的状态。</p>
+        </article>
+      </div>
+      <div class="analysis-block">
+        <p class="layer-label">完整分析</p>
+        <p>你不是没有成长，也不是没有努力。恰恰相反，你很努力、很会反思，也很有韧性。只是这一次要处理的不是知识层面的理解，而是那些已经进入身体和关系的旧反应。它需要在真实场景里被一次次看见、松动和重建。</p>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-head">
+        <div>
+          <h2>你真正想要的状态</h2>
+          <p class="section-lead">你真正想要的，不只是把直播做起来，而是让自己在事业、关系和亲子里，都能更自然、更松弛、更真实地出现。</p>
+        </div>
+        <aside class="takeaway"><b>本节重点</b>愿景不是成为更完美的人，而是把本来具足的自己带回来。</aside>
+      </div>
+      <p class="layer-label">重点句</p>
+      <p class="focus-line">你真正想要的是：<strong>不再只是不要输，而是允许自己真实地活出来一次</strong>。</p>
+      <p class="layer-label">旧模式 / 新方向</p>
+      <div class="comparison">
+        <article class="card compare-card accent-clay">
+          <h3>想停下来的旧循环</h3>
+          <p>停下为了安全而过度控制自己，停下用好妈妈、好妻子、好形象来证明自己，停下把外界反应当成自我价值的审判。</p>
+        </article>
+        <article class="card compare-card accent-sage">
+          <h3>想活出来的新状态</h3>
+          <p>你希望自己能自然表达、自然接住别人的反馈，在直播和关系里把身心脑放到事情本身，而不是一直卡在别人怎么看我。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-head">
+        <div>
+          <h2>旧模式 vs 新练习</h2>
+          <p class="section-lead">下一步不是抽象地“变好”，而是在真实场景里练习新的回应方式。</p>
+        </div>
+        <aside class="takeaway"><b>本节重点</b>新练习必须落在真实场景里，不然旧模式会继续赢。</aside>
+      </div>
+      <p class="layer-label">重点句</p>
+      <p class="focus-line">下一步不是强迫自己立刻变勇敢，而是练习在紧张出现时，仍然不把自己交给自我攻击。</p>
+      <p class="layer-label">场景练习表</p>
+      <table class="practice-table">
+        <thead>
+          <tr>
+            <th>场景</th>
+            <th>旧模式</th>
+            <th>新练习</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="场景">准备直播或公开表达时</td>
+            <td data-label="旧模式">先想象批评者，担心语无伦次、专业不够、熟人怎么看。</td>
+            <td data-label="新练习">把注意力从“我会不会不好”带回“我今天真实给出什么价值”。</td>
+          </tr>
+          <tr>
+            <td data-label="场景">孩子不按你的期待来时</td>
+            <td data-label="旧模式">被勾到“我不是好妈妈”，于是情绪、控制和自责一起出现。</td>
+            <td data-label="新练习">先分清：孩子的状态是孩子的状态，我被触发的是我的旧议题。</td>
+          </tr>
+          <tr>
+            <td data-label="场景">被夸奖、被看见、关系靠近时</td>
+            <td data-label="旧模式">尴尬、退开、低调，把奖赏挡在外面。</td>
+            <td data-label="新练习">练习停一下，允许自己说“谢谢”，并把肯定真正收进来一点。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="reveal">
+      <div class="section-head">
+        <div>
+          <h2>核心诊断</h2>
+          <p class="section-lead">这一部分不是为了给你贴标签，而是为了把真正反复发生的结构讲清楚。</p>
+        </div>
+        <aside class="takeaway"><b>本节重点</b>核心不是直播，而是被看见后能否接住自己。</aside>
+      </div>
+      <p class="layer-label">重点句</p>
+      <p class="focus-line">你不是不想改变，而是那个旧模式太熟悉：它一直用“不要输”保护你，也一直挡住你真正发光。</p>
+      <div class="quote">这次咨询的核心诊断是：<mark class="hl">你长期把生命力放在防守里</mark>。你想被看见，也害怕被看见；你想赢，也害怕赢之后真的站到光里。真正要处理的，不是把你改造成一个更好的人，而是看见那个一被看见就攻击自己、控制自己、收起自己的旧系统，再把本来完整的自己慢慢带回来。</div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-head">
+        <div>
+          <h2>真正的处理方向</h2>
+          <p class="section-lead">真正要处理的不是表面事件本身，而是背后这个会反复启动的模式。</p>
+        </div>
+        <aside class="takeaway"><b>本节重点</b>方向是看见、松动、重建、稳住，而不是再要求自己更用力。</aside>
+      </div>
+      <p class="layer-label">重点句</p>
+      <p class="focus-line">真正的处理方向，是陪你把旧模式从身体和关系里慢慢松开，让你重新回到真实、自然、能给出自己的位置。</p>
+      <p class="layer-label">四步路径</p>
+      <div class="timeline">
+        <article class="card step accent-blue">
+          <h3>看见</h3>
+          <p>看见你什么时候启动被看见恐惧、自我攻击、角色补偿和控制。</p>
+        </article>
+        <article class="card step accent-clay">
+          <h3>松动</h3>
+          <p>松动那些“我必须很好才值得被喜欢”的旧信念，让身体不再一被看见就紧绷。</p>
+        </article>
+        <article class="card step accent-plum">
+          <h3>重建</h3>
+          <p>重建新的表达方式、亲子回应方式、关系靠近方式和自我认可方式。</p>
+        </article>
+        <article class="card step accent-sage">
+          <h3>稳住</h3>
+          <p>在真实生活中反复练习，直到新反应不只是懂了，而是慢慢成为你的能力。</p>
+        </article>
+      </div>
+      <div class="analysis-block">
+        <p class="layer-label">完整分析</p>
+        <p>这条路不是让你变成另一个人，而是把那个本来就有生命力的你找回来。你曾经也有自然、直接、明亮的部分，只是后来一些经历让它收起来了。现在要做的，是让它一点点重新回来。</p>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-head">
+        <div>
+          <h2>现在的你 → 3个月后的你</h2>
+          <p class="section-lead">真正的改变不需要一下子变成另一个人，而是开始在关键场景里长出新的反应。</p>
+        </div>
+        <aside class="takeaway"><b>本节重点</b>三个月的目标不是彻底变完美，而是开始有新的反应。</aside>
+      </div>
+      <div class="future-grid">
+        <article class="future-card accent-blue">
+          <strong>表达上</strong>
+          <p>从一直准备、一直害怕评价，变成能带着一点紧张开始给出自己。</p>
+        </article>
+        <article class="future-card accent-clay">
+          <strong>亲子上</strong>
+          <p>从孩子一触发你就进入控制和自责，变成更快看见自己的按钮，少把议题压到孩子身上。</p>
+        </article>
+        <article class="future-card accent-sage">
+          <strong>自我关系上</strong>
+          <p>从接不住夸奖、总觉得自己不够好，变成开始允许自己被认可，也允许自己不完美。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-head">
+        <div>
+          <h2>为什么不建议只靠自己零散调整</h2>
+          <p class="section-lead">你已经不是一个完全没有觉察的人。正因为你很会觉察，才更容易把报告带回去继续自己消化。但这次的问题不只需要理解，还需要有人陪你在真实场景里练。</p>
+        </div>
+        <aside class="takeaway"><b>本节重点</b>你缺的不是更多道理，而是把觉察变成稳定行动的陪伴。</aside>
+      </div>
+      <p class="layer-label">重点句</p>
+      <p class="focus-line">单次咨询给你看见，但旧模式的松动，需要一段时间的练习、反馈和稳定承接。</p>
+      <div class="grid two">
+        <article class="card accent-gold">
+          <h3>知道不等于做到</h3>
+          <p>你已经做过多年咨询，也能说出很多自己的模式。可你也看见了：知道自己害怕被看见，不等于下次被看见时身体就不紧张。</p>
+        </article>
+        <article class="card accent-blue">
+          <h3>改变需要反馈和重复</h3>
+          <p>改变需要在直播、亲子、关系、被夸奖这些真实场景里不断练习。有人陪你看见当下发生了什么，才能慢慢长出新的反应。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-head">
+        <div>
+          <h2>建议你的系统陪伴路径</h2>
+          <p class="section-lead">如果你愿意认真处理，我会更建议你进入最新版《真心之路》。它和你这次咨询的主线很贴：不是单纯管理情绪，也不是再补一套知识，而是通过心灵地图看见自己生命的位置，在真实生活里慢慢练习赢回自己的心、打开自己的心、给出自己的心。</p>
+        </div>
+        <aside class="takeaway"><b>本节重点</b>推荐最新版《真心之路》：先看见生命位置，再把真实自己带回中心。</aside>
+      </div>
+      <p class="layer-label">重点句</p>
+      <p class="focus-line">这不是多学一点，而是陪你看见：<mark class="hl">你的心在哪里关闭，你的生命力就在哪里停住</mark>，也在哪里可以重新回来。</p>
+
+      <div class="analysis-block">
+        <p class="layer-label">前三个月核心阶段</p>
+        <h3>12 次心灵地图个案规划</h3>
+        <p>前三个月不是泛泛地聊，而是沿着心灵地图，把你的六大区域逐一看清。每一个区域先有一个总议题，再进入一个最需要优先处理的个案。</p>
+      </div>
+      <table class="practice-table path-table">
+        <thead>
+          <tr>
+            <th>序号</th>
+            <th>区域</th>
+            <th>议题 / 个案</th>
+            <th>要处理的内容</th>
+            <th>本站礼物</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="序号">1</td>
+            <td data-label="区域">需要区</td>
+            <td data-label="议题 / 个案">我真正的需要是什么</td>
+            <td data-label="要处理的内容">看见你想被看见、被认可、被喜欢的底层需要，而不是只停在“我要直播”。</td>
+            <td data-label="本站礼物">《觉醒生命》</td>
+          </tr>
+          <tr>
+            <td data-label="序号">2</td>
+            <td data-label="区域">需要区</td>
+            <td data-label="议题 / 个案">匮乏：为什么我总觉得自己不够好</td>
+            <td data-label="要处理的内容">处理你内在“我不够闪亮、不够优秀、不值得被真正看见”的底层自我感。</td>
+            <td data-label="本站礼物">爱 / 连接</td>
+          </tr>
+          <tr>
+            <td data-label="序号">3</td>
+            <td data-label="区域">心碎区</td>
+            <td data-label="议题 / 个案">那个没有被真正看见的小孩</td>
+            <td data-label="要处理的内容">回到早年被挑刺、被忽略、无法自然发光的心碎经验。</td>
+            <td data-label="本站礼物">《故事真相》</td>
+          </tr>
+          <tr>
+            <td data-label="序号">4</td>
+            <td data-label="区域">心碎区</td>
+            <td data-label="议题 / 个案">受害：为什么我会觉得自己一直没有被看好</td>
+            <td data-label="要处理的内容">处理你把父母挑刺、外界评价、过去没被看见，内化成“我就是不被认可的人”。</td>
+            <td data-label="本站礼物">理解 / 接受</td>
+          </tr>
+          <tr>
+            <td data-label="序号">5</td>
+            <td data-label="区域">罪疚区</td>
+            <td data-label="议题 / 个案">我背负了哪些“不够好”的罪疚</td>
+            <td data-label="要处理的内容">看见你如何把孩子、关系、表现和自我价值绑在一起。</td>
+            <td data-label="本站礼物">《活出自己》</td>
+          </tr>
+          <tr>
+            <td data-label="序号">6</td>
+            <td data-label="区域">罪疚区</td>
+            <td data-label="议题 / 个案">不配：为什么我不敢真正允许自己赢</td>
+            <td data-label="要处理的内容">处理你接不住认可、害怕站到更亮的位置、觉得自己不配被看见和被肯定。</td>
+            <td data-label="本站礼物">宽恕</td>
+          </tr>
+          <tr>
+            <td data-label="序号">7</td>
+            <td data-label="区域">期望区</td>
+            <td data-label="议题 / 个案">我对自己和人生有多少“应该”</td>
+            <td data-label="要处理的内容">看见你被好妈妈、好妻子、好形象、六边形角色压住。</td>
+            <td data-label="本站礼物">《放下过去》</td>
+          </tr>
+          <tr>
+            <td data-label="序号">8</td>
+            <td data-label="区域">期望区</td>
+            <td data-label="议题 / 个案">执着：为什么“不要输”比“我想赢”更重要</td>
+            <td data-label="要处理的内容">处理你执着于安全、正确、不出错、不被证明不好，因此迟迟不敢真正向前。</td>
+            <td data-label="本站礼物">放下</td>
+          </tr>
+          <tr>
+            <td data-label="序号">9</td>
+            <td data-label="区域">控制区</td>
+            <td data-label="议题 / 个案">我为什么这么害怕失控</td>
+            <td data-label="要处理的内容">看见你如何通过控制自己、孩子、节奏和表现来获得安全感。</td>
+            <td data-label="本站礼物">《信任过程》</td>
+          </tr>
+          <tr>
+            <td data-label="序号">10</td>
+            <td data-label="区域">控制区</td>
+            <td data-label="议题 / 个案">斗争：我如何通过权力斗争来满足自己的需要</td>
+            <td data-label="要处理的内容">处理你在亲子关系、伴侣关系和自我关系里，如何通过坚持对错、争夺主导、控制节奏来获得安全、被尊重和被看见。</td>
+            <td data-label="本站礼物">信任</td>
+          </tr>
+          <tr>
+            <td data-label="序号">11</td>
+            <td data-label="区域">死亡区</td>
+            <td data-label="议题 / 个案">我在哪里失去了真实的喜悦</td>
+            <td data-label="要处理的内容">看见你为做而做、为应该而做，生命力被慢慢收起来的状态。</td>
+            <td data-label="本站礼物">《活在当下》</td>
+          </tr>
+          <tr>
+            <td data-label="序号">12</td>
+            <td data-label="区域">死亡区</td>
+            <td data-label="议题 / 个案">角色：我什么时候开始只是在扮演一个“好的自己”</td>
+            <td data-label="要处理的内容">处理你用好妈妈、好妻子、好女人、好形象活着，而不是由心而做。</td>
+            <td data-label="本站礼物">承诺</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="analysis-block">
+        <p class="layer-label">后续六个月延展</p>
+        <h3>每月接回一个未完成的核心卡点</h3>
+        <p>前三个月会先处理最关键、最影响你行动和自我关系的部分。后续六个月，则从没有被优先选择的卡点里继续接回来，让这张心灵地图更完整。</p>
+      </div>
+      <table class="practice-table path-table">
+        <thead>
+          <tr>
+            <th>月份</th>
+            <th>区域</th>
+            <th>延展议题</th>
+            <th>为什么接这个</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="月份">第 4 个月</td>
+            <td data-label="区域">需要区</td>
+            <td data-label="延展议题">恐惧：为什么一被看见，我就害怕被评价</td>
+            <td data-label="为什么接这个">前三个月处理了“不够好”的匮乏，接下来要处理被看见时身体自动启动的恐惧。</td>
+          </tr>
+          <tr>
+            <td data-label="月份">第 5 个月</td>
+            <td data-label="区域">需要区</td>
+            <td data-label="延展议题">索取：我如何用表现去换取被喜欢和被看见</td>
+            <td data-label="为什么接这个">在看见需要和恐惧之后，继续看见自己如何向外寻求确认，把爱和认可交给别人决定。</td>
+          </tr>
+          <tr>
+            <td data-label="月份">第 6 个月</td>
+            <td data-label="区域">罪疚区</td>
+            <td data-label="延展议题">自责：孩子一出问题，我为什么马上觉得自己不是好妈妈</td>
+            <td data-label="为什么接这个">不配处理的是自我价值，这里进一步落到亲子场景里的罪疚和自责。</td>
+          </tr>
+          <tr>
+            <td data-label="月份">第 7 个月</td>
+            <td data-label="区域">期望区</td>
+            <td data-label="延展议题">要求：我对自己、孩子和关系到底有多少“必须如此”</td>
+            <td data-label="为什么接这个">执着处理的是“不要输”，这里继续处理你对自己、孩子和关系的高标准与内在要求。</td>
+          </tr>
+          <tr>
+            <td data-label="月份">第 8 个月</td>
+            <td data-label="区域">控制区</td>
+            <td data-label="延展议题">抗拒：我抗拒的到底是直播，还是被真实看见</td>
+            <td data-label="为什么接这个">前面处理权力斗争，后面回到行动层：为什么明明想开始，却仍然抗拒开始。</td>
+          </tr>
+          <tr>
+            <td data-label="月份">第 9 个月</td>
+            <td data-label="区域">死亡区</td>
+            <td data-label="延展议题">枯竭：我如何重新找回真实的生命力和喜悦</td>
+            <td data-label="为什么接这个">前面处理角色，这里继续处理长期扮演之后的枯竭，以及重新承诺生命。</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="layer-label">阶段地图 / 年度路径</p>
+      <div class="stage-map">
+        <article class="stage-card accent-blue">
+          <span class="stage-tag">第 1 阶段</span>
+          <strong>前三个月核心阶段</strong>
+          <p>以心灵地图为主线，安排 12 次定制个案，把需要、心碎、罪疚、期望、控制、死亡区逐一看清。</p>
+        </article>
+        <article class="stage-card accent-clay">
+          <span class="stage-tag">第 2 阶段</span>
+          <strong>后续六个月延展</strong>
+          <p>从前面没有被优先处理的卡点里接回来，每个月一个主题，让改变继续深入，而不是停在前三个月。</p>
+        </article>
+        <article class="stage-card accent-plum">
+          <span class="stage-tag">第 3 阶段</span>
+          <strong>持续线上支持</strong>
+          <p>核心阶段结束后接入「爱自己」，并在一年内每月跟随 Peter 带领的疗愈主题持续支持。</p>
+        </article>
+        <article class="stage-card accent-sage">
+          <span class="stage-tag">第 4 阶段</span>
+          <strong>线下整合巩固</strong>
+          <p>最后通过线下工作坊，把线上看见和疗愈带进身体体验与真实关系中，巩固整个转化效果。</p>
+        </article>
+      </div>
+      <p class="layer-label">周期逻辑</p>
+      <div class="support-track">
+        <article class="support-step">
+          <span class="stage-tag">课程匹配</span>
+          <strong>前三个月：先把地图走扎实</strong>
+          <p>你的核心不是技巧不足，而是心在被看见、被评价、被靠近时会关闭。前三个月会先用心灵地图和 12 次个案，把这些卡点逐一照出来。</p>
+        </article>
+        <article class="support-step emphasis">
+          <span class="stage-tag">后续承接</span>
+          <strong>后六个月：接回没处理完的部分</strong>
+          <p>一个旧模式不只藏在一个点里。后续六个月会从未优先选择的卡点里继续延展，让你不是只懂一部分，而是更完整地回到中心。</p>
+        </article>
+      </div>
+
+      <p class="layer-label">价格说明</p>
+      <div class="price-panel">
+        <article class="price-card original">
+          <span>原价</span>
+          <strong>¥17,820</strong>
+        </article>
+        <article class="price-card healing">
+          <span>疗愈价</span>
+          <strong>¥14,380</strong>
+          <p>当前建议重点看这一档</p>
+        </article>
+      </div>
+
+      <p class="layer-label">周期选择</p>
+      <div class="comparison">
+        <article class="card compare-card recommended">
+          <span class="badge">推荐起步</span>
+          <h3>最新版《真心之路》</h3>
+          <p>最新版《真心之路》是一条一年支持路径：前三个月心灵地图核心个案，后续六个月每月延展，再加上「爱自己」、每月疗愈主题和线下整合。</p>
+        </article>
+        <article class="card compare-card">
+          <span class="badge" style="background: var(--blue);">继续巩固</span>
+          <h3>全年持续支持</h3>
+          <p>对你来说，它最重要的不是课程数量，而是这条路径能把“想被看见又怕被看见”的模式，从理解带到练习，再带到真实生活里的稳定改变，让你不是变成另一个人，而是更稳地回到自己。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-head">
+        <div>
+          <h2>给你的话</h2>
+          <p class="section-lead">这不是总结，而是我更想留给你的那一小段提醒。</p>
+        </div>
+        <aside class="takeaway"><b>本节重点</b>你已经看见了很多，现在更重要的是不要一个人继续硬撑。</aside>
+      </div>
+      <div class="letter">
+        <p>Sunny，我在这次咨询里看到，你其实不是没有力量。你很有韧性，也一直在努力突破自己。只是过去太多年，你把很多力量都用来确保自己安全、不要输、不要被否定。<br><br>我更想提醒你的是：<mark class="hl">你不需要再用完美来换被喜欢</mark>。你真正要练的，是在不完美、会紧张、还没准备好的时候，也能一点点把真实的自己带出来。<br><br>这条路不用急，但也不建议一直停在消化里。你已经走到一个节点了：不是再懂一点，也不是再把自己修好一点，而是开始认真把本来具足的自己带回生活里。</p>
+      </div>
+    </section>
+
+    <section class="reveal" id="decision">
+      <div class="section-head">
+        <div>
+          <h2>现在最重要的决定</h2>
+          <p class="section-lead">这个决定不是立刻把所有未来都想清楚，而是你愿不愿意开始认真处理这个旧循环。</p>
+        </div>
+        <aside class="takeaway"><b>本节重点</b>现在最重要的不是立刻选很远，而是确认你是否愿意开始认真处理。</aside>
+      </div>
+      <p class="layer-label">重点句</p>
+      <p class="focus-line">你不需要一下子决定整个人生，你只需要先决定：是否愿意停止只靠理解，开始进入一段真实改变的周期。</p>
+      <div class="decision">
+        <p>如果你愿意继续往下走，下一次我们可以用 10-15 分钟把方案对齐清楚，不是催你决定，而是帮你判断<span class="underline">《真心之路》是否就是你现在最适合开始的路径</span>。</p>
+        <ul>
+          <li>你现在最想先突破的是直播表达，还是亲子和关系里那个“我必须很好”的旧反应？</li>
+          <li>你看完《真心之路》之后，身体上最有感觉的是“看见生命位置”，还是“把真实的自己带回来”？</li>
+          <li>你最大的顾虑是时间、费用、效果，还是担心自己又会坚持不下来？</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>这份报告基于本次咨询内容整理，只用于帮助你看清当前阶段与下一步方向。</p>
+    </footer>
+  </main>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
