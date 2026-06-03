@@ -852,6 +852,121 @@
   </style>
 
   <style>
+    .chapter-visual {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(260px, .52fr);
+      gap: 18px;
+      align-items: center;
+      margin: 0 0 22px;
+      padding: 18px;
+      border: 1px solid rgba(88,122,98,.22);
+      border-radius: 8px;
+      background:
+        linear-gradient(135deg, rgba(255,253,248,.94), rgba(246,237,220,.42)),
+        radial-gradient(circle at 82% 18%, rgba(211,156,69,.16), transparent 34%);
+      box-shadow: var(--shadow);
+    }
+
+    .chapter-visual-cover {
+      margin-top: -14px;
+      margin-bottom: 34px;
+    }
+
+    .visual-frame {
+      min-height: 230px;
+      border-radius: 8px;
+      background:
+        linear-gradient(180deg, rgba(255,253,248,.82), rgba(249,251,247,.72)),
+        repeating-linear-gradient(0deg, rgba(112,108,98,.035) 0 1px, transparent 1px 18px);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      border: 1px solid rgba(222,215,203,.84);
+    }
+
+    .visual-frame svg {
+      width: min(100%, 620px);
+      height: auto;
+      display: block;
+    }
+
+    .visual-copy {
+      display: grid;
+      gap: 8px;
+    }
+
+    .visual-copy span {
+      width: fit-content;
+      min-height: 28px;
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--sage-soft);
+      color: var(--sage);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .visual-copy h3 {
+      margin: 0;
+      color: var(--ink);
+      font-size: clamp(22px, 3vw, 34px);
+      line-height: 1.22;
+      font-weight: 900;
+    }
+
+    .visual-copy p {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    .sketch-line {
+      fill: none;
+      stroke: rgba(37,35,31,.72);
+      stroke-width: 4.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .sketch-line.fine {
+      stroke-width: 2.7;
+      stroke: rgba(37,35,31,.42);
+    }
+
+    .sketch-line.soft {
+      stroke-width: 3;
+      stroke: rgba(112,108,98,.32);
+    }
+
+    .sketch-line.accent {
+      stroke: rgba(88,122,98,.72);
+    }
+
+    .sketch-line.shield {
+      stroke: rgba(81,111,141,.76);
+      fill: rgba(231,237,243,.5);
+    }
+
+    .sketch-fill {
+      stroke: rgba(37,35,31,.7);
+      stroke-width: 4;
+    }
+
+    .sketch-fill.sage { fill: rgba(232,240,231,.92); }
+    .sketch-fill.clay { fill: rgba(245,230,223,.96); }
+    .sketch-fill.gold { fill: rgba(246,237,220,.96); }
+
+    .wash {
+      stroke: none;
+      opacity: .74;
+    }
+
+    .wash-sage { fill: rgba(232,240,231,.82); }
+    .wash-gold { fill: rgba(246,237,220,.84); }
+    .wash-blue { fill: rgba(231,237,243,.82); }
+
     .path-table {
       table-layout: fixed;
       margin-bottom: 22px;
@@ -916,6 +1031,14 @@
     }
 
     @media (max-width: 980px) {
+      .chapter-visual {
+        grid-template-columns: 1fr;
+      }
+
+      .visual-frame {
+        min-height: 190px;
+      }
+
       .path-table,
       .path-table tbody,
       .path-table tr,
@@ -967,6 +1090,14 @@
     }
 
     @media (max-width: 760px) {
+      .chapter-visual {
+        padding: 14px;
+      }
+
+      .visual-copy h3 {
+        font-size: 23px;
+      }
+
       .price-panel {
         grid-template-columns: 1fr;
       }
@@ -1007,6 +1138,34 @@
       </aside>
     </header>
 
+      <div class="chapter-visual chapter-visual-cover">
+        <div class="visual-frame">
+          <svg viewBox="0 0 560 280" aria-hidden="true">
+            <path class="wash wash-gold" d="M318 42 C410 30 488 80 504 151 C520 226 445 260 357 250 C270 240 226 194 244 125 C258 72 278 50 318 42Z" />
+            <path class="wash wash-sage" d="M74 108 C130 70 210 82 230 142 C251 203 193 245 112 228 C48 215 25 155 74 108Z" />
+            <path class="sketch-line soft" d="M50 222 C158 205 268 214 510 206" />
+            <path class="sketch-line accent" d="M226 54 C223 96 222 143 227 219" />
+            <path class="sketch-line" d="M282 100 C328 76 376 62 428 68" />
+            <path class="sketch-line" d="M290 126 C338 108 387 100 442 109" />
+            <path class="sketch-line" d="M292 154 C344 144 395 145 446 160" />
+            <circle class="sketch-fill clay" cx="184" cy="101" r="20" />
+            <path class="sketch-line" d="M184 122 C180 154 176 181 170 214" />
+            <path class="sketch-line" d="M178 148 C145 156 125 170 111 194" />
+            <path class="sketch-line" d="M190 148 C215 156 231 171 242 196" />
+            <path class="sketch-line" d="M170 214 C152 229 139 239 121 246" />
+            <path class="sketch-line" d="M172 214 C191 228 207 236 229 241" />
+            <path class="sketch-line accent" d="M242 196 C265 197 288 197 311 197" />
+            <path class="sketch-line fine" d="M99 74 C117 50 143 39 172 45" />
+            <path class="sketch-line fine" d="M366 38 C391 24 423 24 453 38" />
+          </svg>
+        </div>
+        <div class="visual-copy">
+          <span>一眼看懂</span>
+          <h3>一边想走向光，一边先停在安全线后面。</h3>
+          <p>这一节先看见：你卡住的不是直播，而是被看见时身体自动启动的保护。</p>
+        </div>
+      </div>
+
     <section class="top-conclusions reveal">
       <div class="section-head">
         <div>
@@ -1038,6 +1197,33 @@
           <p class="section-lead">先用一张图把这份报告的因果线看清楚：你不是很多地方都有问题，而是同一个模式在不同场景重复。</p>
         </div>
         <aside class="takeaway"><b>本节重点</b>同一个模式正在不同场景重复：被看见会启动自我攻击，安全会压过生命力。</aside>
+      </div>
+
+      <div class="chapter-visual">
+        <div class="visual-frame">
+          <svg viewBox="0 0 560 280" aria-hidden="true">
+            <path class="wash wash-blue" d="M300 36 C396 18 500 72 506 158 C512 235 423 262 323 244 C238 228 200 176 222 106 C235 65 262 43 300 36Z" />
+            <path class="sketch-line soft" d="M114 230 C206 210 338 218 470 204" />
+            <path class="sketch-line" d="M328 70 L466 70 L466 220 L328 220 Z" />
+            <path class="sketch-line fine" d="M344 96 C379 84 421 86 450 102" />
+            <path class="sketch-line fine" d="M344 128 C380 118 421 121 452 138" />
+            <path class="sketch-line fine" d="M344 160 C383 154 421 157 450 174" />
+            <circle class="sketch-fill sage" cx="210" cy="100" r="19" />
+            <path class="sketch-line" d="M210 121 C207 151 203 181 198 214" />
+            <path class="sketch-line" d="M201 148 C177 159 160 178 151 202" />
+            <path class="sketch-line" d="M217 148 C235 157 249 170 260 190" />
+            <path class="sketch-line shield" d="M252 137 C280 143 297 154 307 171 C303 201 283 220 252 228 C225 218 208 199 204 171 C216 153 232 143 252 137Z" />
+            <path class="sketch-line accent" d="M246 164 C258 171 264 180 268 193" />
+            <path class="sketch-line accent" d="M300 84 C282 100 267 117 255 137" />
+            <path class="sketch-line accent" d="M310 119 C289 129 271 139 255 153" />
+            <path class="sketch-line fine" d="M90 66 C118 48 153 46 183 60" />
+          </svg>
+        </div>
+        <div class="visual-copy">
+          <span>核心模式</span>
+          <h3>你不是不想赢，你只是太习惯先保护自己不要输。</h3>
+          <p>这张图对应本节：盾牌保护了你，也挡住了你真正站出来的动作。</p>
+        </div>
       </div>
       <div class="core-map">
         <article class="map-node accent-blue">
@@ -1120,6 +1306,36 @@
           <p class="section-lead">真正定制的报告，不只是给结论，也要让你看见：这些判断是从哪里来的。</p>
         </div>
         <aside class="takeaway"><b>本节重点</b>三个信号共同指向：这不是单一事件，而是一条长期运行的旧路。</aside>
+      </div>
+
+      <div class="chapter-visual">
+        <div class="visual-frame">
+          <svg viewBox="0 0 560 280" aria-hidden="true">
+            <path class="wash wash-gold" d="M96 48 C176 16 248 53 264 124 C281 198 213 245 133 230 C62 217 35 109 96 48Z" />
+            <path class="wash wash-sage" d="M336 55 C420 26 492 71 497 145 C502 219 420 260 335 236 C268 217 267 80 336 55Z" />
+            <path class="sketch-line soft" d="M60 226 C155 210 330 216 498 205" />
+            <path class="sketch-line accent" d="M276 50 C270 95 271 147 278 231" />
+            <path class="sketch-line fine" d="M288 56 C294 102 294 162 289 230" />
+            <circle class="sketch-fill clay" cx="166" cy="102" r="18" />
+            <path class="sketch-line" d="M166 122 C164 151 160 182 154 213" />
+            <path class="sketch-line" d="M160 148 C134 158 116 175 104 198" />
+            <path class="sketch-line" d="M174 149 C197 159 220 171 245 183" />
+            <circle class="sketch-fill sage" cx="397" cy="105" r="17" />
+            <path class="sketch-line" d="M397 125 C397 152 397 181 400 213" />
+            <path class="sketch-line" d="M389 148 C363 160 338 172 310 184" />
+            <path class="sketch-line" d="M407 148 C431 159 448 174 461 198" />
+            <path class="sketch-line accent" d="M312 177 C328 163 342 155 357 152" />
+            <path class="sketch-line accent" d="M347 154 C352 139 362 129 378 124" />
+            <path class="sketch-line accent" d="M357 152 C370 159 377 171 379 186" />
+            <path class="sketch-line accent" d="M347 154 C335 160 327 171 324 186" />
+            <path class="sketch-line fine" d="M336 188 C350 197 366 199 384 190" />
+          </svg>
+        </div>
+        <div class="visual-copy">
+          <span>关键信号</span>
+          <h3>不是没有肯定，而是肯定还进不到心里。</h3>
+          <p>这一节用几个信号看见：夸奖、靠近、表现，都被内在的否定系统挡了一层。</p>
+        </div>
       </div>
       <div class="quote-signal-grid">
         <article class="quote-signal-card accent-blue">
@@ -1232,6 +1448,31 @@
         </div>
         <aside class="takeaway"><b>本节重点</b>旧循环不是偶尔发生，而是从事业、关系到亲子都在重复。</aside>
       </div>
+
+      <div class="chapter-visual">
+        <div class="visual-frame">
+          <svg viewBox="0 0 560 280" aria-hidden="true">
+            <path class="wash wash-sage" d="M114 70 C188 31 276 54 296 128 C319 213 230 258 135 234 C61 215 47 107 114 70Z" />
+            <path class="wash wash-blue" d="M344 48 C428 26 499 72 505 152 C511 228 428 258 345 238 C276 221 277 66 344 48Z" />
+            <path class="sketch-line soft" d="M66 225 C168 209 318 218 498 204" />
+            <path class="sketch-line accent" d="M139 156 C154 102 204 82 251 112 C296 140 290 209 237 231 C183 253 126 219 121 168 C117 121 151 86 199 79" />
+            <circle class="sketch-fill clay" cx="202" cy="137" r="18" />
+            <path class="sketch-line" d="M202 157 C200 178 198 198 194 219" />
+            <path class="sketch-line" d="M195 176 C177 184 165 196 156 211" />
+            <path class="sketch-line" d="M210 175 C226 184 238 196 248 211" />
+            <path class="sketch-line" d="M312 198 C350 160 390 130 445 105" />
+            <path class="sketch-line accent" d="M424 95 C444 94 459 99 473 112" />
+            <path class="sketch-line accent" d="M445 105 C444 124 438 140 425 154" />
+            <path class="sketch-line fine" d="M360 94 C392 70 429 64 466 78" />
+            <path class="sketch-line fine" d="M361 132 C389 114 421 111 455 123" />
+          </svg>
+        </div>
+        <div class="visual-copy">
+          <span>重复循环</span>
+          <h3>安全保护了你，也把你困在原地。</h3>
+          <p>这一节看清旧循环：越想确保不出错，越难自然表达、靠近和给出自己。</p>
+        </div>
+      </div>
       <p class="layer-label">重点句</p>
       <p class="focus-line">你的循环是：被看见或被要求表现 -> 担心自己不够好 -> 控制和退缩 -> 暂时安全 -> 更难真正给出自己。</p>
       <p class="layer-label">编号逻辑链</p>
@@ -1311,6 +1552,34 @@
           <p class="section-lead">你真正想要的，不只是把直播做起来，而是让自己在事业、关系和亲子里，都能更自然、更松弛、更真实地出现。</p>
         </div>
         <aside class="takeaway"><b>本节重点</b>愿景不是成为更完美的人，而是把本来具足的自己带回来。</aside>
+      </div>
+
+      <div class="chapter-visual">
+        <div class="visual-frame">
+          <svg viewBox="0 0 560 280" aria-hidden="true">
+            <path class="wash wash-gold" d="M274 42 C366 16 458 63 485 137 C514 219 429 258 318 247 C224 238 186 183 208 111 C219 75 239 52 274 42Z" />
+            <path class="sketch-line soft" d="M72 222 C179 206 328 217 500 204" />
+            <path class="sketch-line accent" d="M138 212 C183 184 226 161 271 146 C315 132 364 126 424 128" />
+            <circle class="sketch-fill sage" cx="221" cy="100" r="18" />
+            <path class="sketch-line" d="M221 120 C219 149 216 181 212 216" />
+            <path class="sketch-line" d="M214 148 C193 158 175 174 164 197" />
+            <path class="sketch-line" d="M229 148 C250 156 268 171 282 193" />
+            <circle class="sketch-fill clay" cx="319" cy="132" r="13" />
+            <path class="sketch-line" d="M319 146 C318 166 317 185 315 206" />
+            <path class="sketch-line" d="M314 164 C300 171 291 181 284 194" />
+            <path class="sketch-line" d="M324 164 C337 172 347 183 354 198" />
+            <path class="sketch-line accent" d="M281 193 C295 181 302 172 314 164" />
+            <path class="sketch-line fine" d="M398 83 C417 67 445 64 471 76" />
+            <path class="sketch-line fine" d="M389 103 C414 92 442 92 470 108" />
+            <path class="sketch-line fine" d="M108 80 C130 63 157 60 184 72" />
+            <path class="sketch-line accent" d="M410 134 C422 120 439 116 455 126 C450 146 434 156 414 151 C411 146 410 140 410 134Z" />
+          </svg>
+        </div>
+        <div class="visual-copy">
+          <span>真实愿景</span>
+          <h3>疗愈不是把你修好，而是把本来完整的你带回来。</h3>
+          <p>这一节从诊断转向愿景：不是更完美，而是更真实、更松弛地回到自己。</p>
+        </div>
       </div>
       <p class="layer-label">重点句</p>
       <p class="focus-line">你真正想要的是：<strong>不再只是不要输，而是允许自己真实地活出来一次</strong>。</p>
@@ -1467,6 +1736,35 @@
           <p class="section-lead">如果你愿意认真处理，我会更建议你进入最新版《真心之路》。它和你这次咨询的主线很贴：不是单纯管理情绪，也不是再补一套知识，而是通过心灵地图看见自己生命的位置，在真实生活里慢慢练习赢回自己的心、打开自己的心、给出自己的心。</p>
         </div>
         <aside class="takeaway"><b>本节重点</b>推荐最新版《真心之路》：先看见生命位置，再把真实自己带回中心。</aside>
+      </div>
+
+      <div class="chapter-visual">
+        <div class="visual-frame">
+          <svg viewBox="0 0 560 280" aria-hidden="true">
+            <path class="wash wash-blue" d="M95 55 C173 17 257 46 277 117 C301 202 218 254 121 234 C47 219 31 87 95 55Z" />
+            <path class="wash wash-sage" d="M332 46 C421 22 500 73 506 154 C512 233 430 263 334 238 C262 220 261 66 332 46Z" />
+            <path class="sketch-line soft" d="M62 225 C164 209 322 218 501 204" />
+            <path class="sketch-line" d="M110 81 C178 56 250 75 303 116 C354 156 407 169 469 144" />
+            <path class="sketch-line accent" d="M117 176 C178 142 238 148 291 178 C346 209 404 207 469 181" />
+            <circle class="sketch-fill sage" cx="136" cy="82" r="12" />
+            <circle class="sketch-fill gold" cx="243" cy="88" r="12" />
+            <circle class="sketch-fill clay" cx="332" cy="137" r="12" />
+            <circle class="sketch-fill sage" cx="443" cy="146" r="12" />
+            <circle class="sketch-fill gold" cx="167" cy="169" r="10" />
+            <circle class="sketch-fill clay" cx="291" cy="178" r="10" />
+            <circle class="sketch-fill sage" cx="420" cy="190" r="10" />
+            <path class="sketch-line fine" d="M126 113 C148 104 174 105 199 117" />
+            <path class="sketch-line fine" d="M254 125 C281 111 313 112 341 128" />
+            <path class="sketch-line fine" d="M358 80 C384 67 414 68 443 83" />
+            <path class="sketch-line accent" d="M99 205 C121 195 145 195 167 205" />
+            <path class="sketch-line accent" d="M197 220 C220 207 250 207 276 220" />
+          </svg>
+        </div>
+        <div class="visual-copy">
+          <span>系统路径</span>
+          <h3>真正的改变，是有人陪你把觉察走成新的路。</h3>
+          <p>这一节看路径：看见、松动、重建、稳住，不是更多道理，而是持续练习。</p>
+        </div>
       </div>
       <p class="layer-label">重点句</p>
       <p class="focus-line">这不是多学一点，而是陪你看见：<mark class="hl">你的心在哪里关闭，你的生命力就在哪里停住</mark>，也在哪里可以重新回来。</p>
